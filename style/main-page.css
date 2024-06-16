@@ -1,0 +1,436 @@
+/*body{
+    background: rgb(71,163,237);
+    background: linear-gradient(112deg, rgba(71,163,237,1) 36%, rgba(74,178,224,1) 65%);
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    background-image: url("../img/white-abstract-background-vector.jpg");
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-image: url("../img/white-abstract-background-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+   
+}
+main .content{
+    align-self: center;
+    padding:0.8rem;
+    color: rgb(34, 34, 34);
+    border-radius: 0.4rem;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+   
+}
+.btn-start{
+    color: white;
+    background: rgb(18,103,171);
+}
+.logo{
+    clip-path: circle();
+    animation: heart 3s infinite !important;
+}
+.text-main{
+    color: rgb(38, 121, 188) !important;
+    font-weight: bold !important;
+    margin: 0.4rem 0rem !important;
+    font-size: 3.5rem !important;
+    margin-bottom: 0.7rem !important;
+}
+
+.content-text > h2{
+    font-size: 1.7rem;
+    color:  rgb(21, 21, 21);
+    font-weight: bold;
+    margin: 0.4rem;
+}
+ 
+[src="./R.png"]{
+    width: 40%;
+}
+
+ 
+
+.text-p{
+    text-align: center;
+}
+div h3{
+    font-size: 1.5rem;
+    display: inline;
+    padding: 0.5rem 1rem;
+    color:white;
+    background-color:  rgb(38, 121, 188) ;
+    margin: 0.5rem;
+    
+}
+ 
+
+.cicle{
+    position: absolute;
+    width: 9%;
+    height: 16vh;
+    background-color: white;
+    border: solid rgb(56, 148, 223) 0.6rem;
+    left: -5rem;
+    top: -2rem;
+    border-radius: 5rem;
+    margin: 0;
+
+}
+
+.mini-cicle{
+    position: absolute;
+    width: 4%;
+    height: 6vh;
+    background-color: white;
+    border: solid rgb(56, 148, 223) 0.3rem;
+    left: -2rem;
+    top: 10rem;
+    border-radius: 5rem;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+}
+
+.mini_ci{
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+}
+
+.mini_ci_two{
+    position: absolute;
+    bottom: 0rem;
+    right: 0;
+}
+
+ul > li{
+    color:  rgb(16, 60, 96);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0rem;
+    list-style-type: none;
+}
+
+.book-animation {
+    width: 7%;
+    animation-delay: 10s;
+    animation: caminando 4s linear;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+
+}
+
+
+@keyframes caminando {
+    
+    10%{
+        opacity: 1;
+    }
+    70%{
+        transform: perspective(10rem) rotateY(360deg);
+    }
+    90%{
+        transform: perspective(10rem) translateZ(2rem);
+    }
+    100%{
+        transform: perspective(10rem) rotateY(20deg);
+    }
+}
+
+@keyframes heart {
+    0%{
+        transform: perspective(10rem) translateZ(5px);
+    } 
+    50%{
+        transform: perspective(10rem) translateZ(-5px);
+    }
+    100%{
+        transform: perspective(10rem) translateZ(5px);
+    }
+}
+
+
+.main-bottom{
+  margin-top: 1rem;
+}
+.btn-start{
+    width: 50%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+        }
+
+.btn-start:hover{
+    animation: heart 3s infinite !important;    
+}
+
+ .check-in-blue{
+    margin-bottom: 0.2rem;
+ }
+@keyframes myAwesomeAnimation {
+    1% {
+        opacity: 0;
+          
+    }
+
+    50% {
+        opacity: 1;
+      
+    }
+
+    70%{
+        transform: perspective(10rem) rotateZ(360deg);
+        
+    }
+
+    90%{
+        transform: perspective(10rem) translateZ(5px);
+       
+    }
+
+    100%{
+        transform: perspective(10rem) translateZ(0px);
+       
+    }
+}
+
+
+.check-in-blue, ul{
+    display: block;
+    margin-top: 1rem;
+}
+
+i{
+    filter: drop-shadow(0px 3px  rgb(56, 148, 223) );
+    color: white;
+    margin-right: 0.3rem;
+    
+}
+
+/*menu*/
+
+ nav{
+    position: fixed;
+    overflow: hidden;
+    top: 0.3rem;
+    right: 0.4rem;
+    width: 4rem;
+    transition: width 0.2s linear;
+    color: white;
+ }
+
+ .menu-ha img{
+    width: 70%;
+    color: white;
+    cursor: pointer;
+    background-image: url(./img/menu.png);
+ }
+ nav ul{
+    margin: 0;
+    padding: 0;
+    display: initial;
+ }
+ nav ul li:nth-child(2){
+  display: none;
+ }
+
+ nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+ }
+ .margin_b{
+      margin-top: -0.5rem;
+ }
+ a{
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+ }
+
+ .book-menu{
+    width: 50%;
+    text-align: center;
+ }
+
+ /*Responsive*/
+
+
+ @media screen and (max-width:1230px) {
+    div > h3{
+      
+        margin: 0;
+    }
+ }
+  @media screen and (max-width:960px) {
+    
+    div h3{
+        display: block !important;
+    }
+
+    main .content{
+       
+        width: 80%;
+       
+    }
+
+    .cicle{
+        left: -3rem;
+        top: -1rem;
+        width: 20%;
+    }
+
+    .book-animation{
+        top: 5%;
+        right: 29%;
+        width: 10%;
+    }
+  }
+
+ @media screen and (max-width: 480px) {
+    main .content{
+       
+        width: 90% ;
+       
+    }
+
+    div h3{
+        display: block ;
+    }
+
+    .check-in-blue, ul{
+        display: block;
+        margin: 0;
+    }
+ }
+
+ 
+
+.botom-modal{
+    padding: 2rem;
+    background-color: rgb(142, 116, 116);
+}
+
+.botom-modal > label{
+    padding: 10px 15px;
+    background-color: aqua;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.botom-modal > label:hover{
+    background-color: rgb(65, 83, 83);
+}
+
+[type="checkbox"]{
+    display: none;
+}
+
+.container-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgb(0 0 0 / 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999999;
+   
+}
+
+.contenido {
+    font-weight: 400;
+    text-align: center;
+    background:rgb(255 255 255);
+    /* border: 2px black solid; */
+    padding: 1rem;
+    border-radius: 0.2rem;
+    animation: myAwesomeAnimation 3s linear  1 alternate both;
+}
+
+.contenido .cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cerrar > label{
+    padding: 7px 10px;
+    padding: 10px 15px;
+    background-color: rgb(184, 50, 50);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+
+}
+
+.cerrar > label:hover{
+    background-color: rgb(74, 110, 110);
+}
+
+.contenido-img > img{
+    width: 15rem;
+    height: 13rem;
+    text-align: center;
+}
+
+.contenido-text{
+    text-align: center;
+    font-weight: bold !important;
+}
+
+        
+@keyframes myAwesomeAnimation {
+    1% {
+        opacity: 0;
+        
+    }
+
+    50% {
+        opacity: 1;
+    
+    }
+
+    70%{
+        transform: perspective(10rem) rotateZ(360deg);
+        
+    }
+
+    90%{
+        transform: perspective(10rem) translateZ(5px);
+    
+    }
+
+    100%{
+        transform: perspective(10rem) translateZ(0px);
+    
+    }
+}
